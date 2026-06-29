@@ -20,7 +20,7 @@ jobs:
   publish-image:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # GHCR (and Docker generally) requires repository names to be
       # lowercase. github.repository_owner preserves the account's actual
@@ -57,7 +57,7 @@ jobs:
       run:
         working-directory: terraform
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
