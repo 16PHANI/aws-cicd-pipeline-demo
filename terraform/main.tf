@@ -30,16 +30,16 @@ module "network" {
 module "compute" {
   source = "./modules/compute"
 
-  environment            = var.environment
-  instance_type          = var.instance_type
-  app_port               = var.app_port
-  vpc_id                 = module.network.vpc_id
-  subnet_ids             = module.network.subnet_ids
-  alb_security_group_id  = module.network.alb_security_group_id
-  app_security_group_id  = module.network.app_security_group_id
-  asg_min_size           = var.asg_min_size
-  asg_max_size           = var.asg_max_size
-  asg_desired_capacity   = var.asg_desired_capacity
+  environment           = var.environment
+  instance_type         = var.instance_type
+  app_port              = var.app_port
+  vpc_id                = module.network.vpc_id
+  subnet_ids            = module.network.subnet_ids
+  alb_security_group_id = module.network.alb_security_group_id
+  app_security_group_id = module.network.app_security_group_id
+  asg_min_size          = var.asg_min_size
+  asg_max_size          = var.asg_max_size
+  asg_desired_capacity  = var.asg_desired_capacity
 }
 
 module "monitoring" {
