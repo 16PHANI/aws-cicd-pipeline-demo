@@ -1,11 +1,11 @@
-# aws-cicd-pipeline-demo
+# Push-to-Prod
 
 A small Flask API wrapped in the kind of delivery pipeline you'd actually want around a service in production: linting, tests with a coverage gate, a multi-stage Docker build, a GitHub Actions CI/CD setup that publishes a real image with zero configuration, and Terraform that stands up an ALB, an Auto Scaling Group, IAM roles, and CloudWatch alarms on AWS.
 
 The API itself is a task tracker. It's deliberately simple, in-memory storage, a handful of REST endpoints. That's on purpose. This repo isn't trying to impress anyone with the to-do app; it's a vehicle for the pipeline and the infrastructure around it, which is the part that took the actual time.
 
-[![CI](https://github.com/16PHANI/aws-cicd-pipeline-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/16PHANI/aws-cicd-pipeline-demo/actions/workflows/ci.yml)
-[![CD](https://github.com/16PHANI/aws-cicd-pipeline-demo/actions/workflows/cd.yml/badge.svg)](https://github.com/16PHANI/aws-cicd-pipeline-demo/actions/workflows/cd.yml)
+[![CI](https://github.com/16PHANI/push-to-prod/actions/workflows/ci.yml/badge.svg)](https://github.com/16PHANI/push-to-prod/actions/workflows/ci.yml)
+[![CD](https://github.com/16PHANI/push-to-prod/actions/workflows/cd.yml/badge.svg)](https://github.com/16PHANI/push-to-prod/actions/workflows/cd.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Why this exists
