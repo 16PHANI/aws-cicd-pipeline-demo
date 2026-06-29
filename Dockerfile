@@ -3,7 +3,7 @@
 # nothing but the installed packages and app code copied in. Cuts the
 # final image down and keeps build tooling off the box that runs in prod.
 
-FROM python:3.11-slim AS builder
+FROM python:3.14-slim AS builder
 
 WORKDIR /build
 
@@ -15,7 +15,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 
-FROM python:3.11-slim AS runtime
+FROM python:3.14-slim AS runtime
 
 # Pin a non-root, non-zero UID/GID so the container never runs as root and
 # so the same numeric UID works whether or not the image is run on a host
