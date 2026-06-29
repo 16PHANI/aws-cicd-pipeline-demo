@@ -1,3 +1,14 @@
+terraform {
+  required_version = ">= 1.5.0"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 # Uses the account's default VPC instead of creating a new one. A demo
 # project does not need a custom VPC, and re-using the default one keeps
 # this runnable in a fresh AWS account with zero extra setup or cost.
