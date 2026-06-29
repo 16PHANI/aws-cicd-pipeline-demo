@@ -1,0 +1,13 @@
+.git
+.github
+.pytest_cache
+.coverage
+htmlcov
+__pycache__
+*.pyc
+.venv
+venv
+terraform
+tests
+*.md
+.pre-commit-config.yaml
