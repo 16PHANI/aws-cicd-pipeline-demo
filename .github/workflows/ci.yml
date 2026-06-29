@@ -80,7 +80,7 @@ jobs:
       - run: terraform fmt -check -diff -recursive
       - run: terraform init -backend=false
       - run: terraform validate
-      - uses: terraform-linters/setup-tflint@v4
+      - uses: terraform-linters/setup-tflint@v6
         with:
           tflint_version: v0.52.0
       - run: tflint --init
